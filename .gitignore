@@ -45,3 +45,9 @@ local.properties
 
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+#sphinx
+_build
+_static
+_templates
+manual/\.venv/

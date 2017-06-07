@@ -1,11 +1,14 @@
 [![Build Status](https://travis-ci.org/charite/hyperSMURF.svg?branch=master)](https://travis-ci.org/charite/hyperSMURF)
-[![API Docs](https://img.shields.io/badge/api-v0.2-blue.svg?style=flat)](http://charite.github.io/hyperSMURF/api/0.2/)
+[![Documentation](https://readthedocs.org/projects/jannovar/badge/?version=master)](https://hyperSMURF.readthedocs.org)
+[![API Docs](https://img.shields.io/badge/api-v0.3-blue.svg?style=flat)](https://javadoc.io/doc/de.charite.compbio/hyperSMURF/)
 [![license](https://img.shields.io/badge/licence-GNU%20GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.txt)
 
 
 # hyperSMURF
 
-Weka implementation of hyperSMURF using EasyEnsemble and SMOTE
+Weka implementation of hyperSMURF using EasyEnsemble and SMOTE.
+
+Please read the [manual](https://hyperSMURF.readthedocs.org) for more information, a detailed installation descriotion and a tutorial.
 
 ## Requirements
 
@@ -37,11 +40,11 @@ cd hyperSMURF
 mvn clean install package
 ```
 
-Now you should have the  `hyperSMURF-0.2.jar` in the folder `target/`. The package phase of Maven creates also the Weka  file `hyperSMURF-0.2-weka.zip`. It is located in the `target/` folder.
+Now you should have the  `hyperSMURF-0.3.jar` in the folder `target/`. The package phase of Maven creates also the Weka  file `hyperSMURF-0.3-weka.zip`. It is located in the `target/` folder.
 
 ### Load the plugin into your Weka Package Manager
 
-Open Weka, go to the package manager, and load the file `hyperSMURF-0.2-weka.zip` into it.  Look at the [Weka wiki](http://weka.wikispaces.com/How+do+I+use+the+package+manager%3F) for more information about the Weka Package Manager.
+Open Weka, go to the package manager, and load the file `hyperSMURF-0.3-weka.zip` into it.  Look at the [Weka wiki](http://weka.wikispaces.com/How+do+I+use+the+package+manager%3F) for more information about the Weka Package Manager.
 
 ## Installation using Maven
 
@@ -51,6 +54,16 @@ If you want to include hyperSMURF into your java project you can use Maven to do
 <dependency>
 	<groupId>de.charite.compbio</groupId>
 	<artifactId>hyperSMURF</artifactId>
-	<version>0.2</version>
+	<version>0.3</version>
 </dependency>
 ```  
+
+## Citation
+
+Please cite our [Scientific Reports article](https://doi.org/10.1038/s41598-017-03011-5):
+
+```
+M. Schubach, M. Re, P. N. Robinson, and G. Valentini. (2017).
+Imbalance-Aware Machine Learning for Predicting Rare and Common Disease-Associated Non-Coding Variants.
+Scientific Reports, 7.
+```
